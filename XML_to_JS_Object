@@ -11,12 +11,13 @@ let xml_string = fs.readFileSync("Hogland_Config.xml", "utf8");
 parser.parseString(xml_string, function(error, result) {
     if(error === null) {
         console.log(result);
-        hogland_xml_object = result
+        xml_js_result = result
 
     }
     else {
         console.log(error);
     }
 });
-var x= 3
+let hogland_xml_object = xml_js_result
+
 
